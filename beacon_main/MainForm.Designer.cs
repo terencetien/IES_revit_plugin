@@ -58,9 +58,9 @@ namespace Revit.SDK.Samples.ImportExport.CS
             this.buttonCancel = new System.Windows.Forms.Button();
             this.groupBoxOperation = new System.Windows.Forms.GroupBox();
             this.comboBoxImport = new System.Windows.Forms.ComboBox();
-            this.comboBoxExport = new System.Windows.Forms.ComboBox();
             this.radioButtonImport = new System.Windows.Forms.RadioButton();
             this.radioButtonExport = new System.Windows.Forms.RadioButton();
+            this.comboBoxExport = new System.Windows.Forms.ComboBox();
             this.groupBoxOperation.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,15 +107,6 @@ namespace Revit.SDK.Samples.ImportExport.CS
             this.comboBoxImport.Size = new System.Drawing.Size(161, 21);
             this.comboBoxImport.TabIndex = 2;
             // 
-            // comboBoxExport
-            // 
-            this.comboBoxExport.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxExport.FormattingEnabled = true;
-            this.comboBoxExport.Location = new System.Drawing.Point(72, 19);
-            this.comboBoxExport.Name = "comboBoxExport";
-            this.comboBoxExport.Size = new System.Drawing.Size(161, 21);
-            this.comboBoxExport.TabIndex = 2;
-            // 
             // radioButtonImport
             // 
             this.radioButtonImport.AutoSize = true;
@@ -139,6 +130,15 @@ namespace Revit.SDK.Samples.ImportExport.CS
             this.radioButtonExport.Text = "Export ";
             this.radioButtonExport.UseVisualStyleBackColor = true;
             this.radioButtonExport.CheckedChanged += new System.EventHandler(this.radioButtonExport_CheckedChanged);
+            // 
+            // comboBoxExport
+            // 
+            this.comboBoxExport.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxExport.FormattingEnabled = true;
+            this.comboBoxExport.Location = new System.Drawing.Point(72, 19);
+            this.comboBoxExport.Name = "comboBoxExport";
+            this.comboBoxExport.Size = new System.Drawing.Size(161, 21);
+            this.comboBoxExport.TabIndex = 2;
             // 
             // MainForm
             // 
@@ -170,8 +170,8 @@ namespace Revit.SDK.Samples.ImportExport.CS
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.GroupBox groupBoxOperation;
         private System.Windows.Forms.RadioButton radioButtonImport;
-        private System.Windows.Forms.RadioButton radioButtonExport;
         private System.Windows.Forms.ComboBox comboBoxImport;
         private System.Windows.Forms.ComboBox comboBoxExport;
+        private System.Windows.Forms.RadioButton radioButtonExport;
     }
 }

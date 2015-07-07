@@ -126,6 +126,10 @@ namespace Revit.SDK.Samples.ImportExport.CS
         {
             this.Close();
         }
-      
+
+        private void comboBoxExport_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
